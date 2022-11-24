@@ -1,0 +1,11 @@
+framework module GdyJSBridge {
+  umbrella header "GdyJSBridge.h"
+
+  export *
+  module * { export * }
+}
+
+module GdyJSBridge.Swift {
+  header "GdyJSBridge-Swift.h"
+  requires objc
+}

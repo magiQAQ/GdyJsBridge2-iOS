@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA41BA23292F161F0088A55F /* GdyJSBridge.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA41BA21292F15C20088A55F /* GdyJSBridge.xcframework */; };
+		DA41BA24292F161F0088A55F /* GdyJSBridge.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA41BA21292F15C20088A55F /* GdyJSBridge.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DA41BA2E292F4B3D0088A55F /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = DA41BA2D292F4B3D0088A55F /* test.html */; };
+		DA41BA30292F4B580088A55F /* gdy-bridge.min.js in Resources */ = {isa = PBXBuildFile; fileRef = DA41BA2F292F4B580088A55F /* gdy-bridge.min.js */; };
+		DA41BA34292F564D0088A55F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DA41BA33292F564D0088A55F /* README.md */; };
 		DAC15ED4292CB2F1005E31A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC15ED3292CB2F1005E31A0 /* AppDelegate.swift */; };
 		DAC15ED6292CB2F1005E31A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC15ED5292CB2F1005E31A0 /* SceneDelegate.swift */; };
 		DAC15ED8292CB2F1005E31A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC15ED7292CB2F1005E31A0 /* ViewController.swift */; };
@@ -15,7 +20,25 @@
 		DAC15EE0292CB2F2005E31A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC15EDE292CB2F2005E31A0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DA41BA25292F161F0088A55F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DA41BA24292F161F0088A55F /* GdyJSBridge.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		DA41BA21292F15C20088A55F /* GdyJSBridge.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GdyJSBridge.xcframework; sourceTree = "<group>"; };
+		DA41BA2D292F4B3D0088A55F /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		DA41BA2F292F4B580088A55F /* gdy-bridge.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "gdy-bridge.min.js"; sourceTree = "<group>"; };
+		DA41BA33292F564D0088A55F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DAC15ED0292CB2F1005E31A0 /* GdyJsBridge2-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GdyJsBridge2-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC15ED3292CB2F1005E31A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAC15ED5292CB2F1005E31A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,15 +54,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA41BA23292F161F0088A55F /* GdyJSBridge.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA41BA2C292F4AC30088A55F /* H5 */ = {
+			isa = PBXGroup;
+			children = (
+				DA41BA2F292F4B580088A55F /* gdy-bridge.min.js */,
+				DA41BA2D292F4B3D0088A55F /* test.html */,
+			);
+			path = H5;
+			sourceTree = "<group>";
+		};
 		DAC15EC7292CB2F1005E31A0 = {
 			isa = PBXGroup;
 			children = (
+				DA41BA33292F564D0088A55F /* README.md */,
 				DAC15ED2292CB2F1005E31A0 /* GdyJsBridge2-iOS */,
 				DAC15ED1292CB2F1005E31A0 /* Products */,
 			);
@@ -56,6 +90,8 @@
 		DAC15ED2292CB2F1005E31A0 /* GdyJsBridge2-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				DA41BA2C292F4AC30088A55F /* H5 */,
+				DA41BA21292F15C20088A55F /* GdyJSBridge.xcframework */,
 				DAC15ED3292CB2F1005E31A0 /* AppDelegate.swift */,
 				DAC15ED5292CB2F1005E31A0 /* SceneDelegate.swift */,
 				DAC15ED7292CB2F1005E31A0 /* ViewController.swift */,
@@ -77,6 +113,7 @@
 				DAC15ECC292CB2F1005E31A0 /* Sources */,
 				DAC15ECD292CB2F1005E31A0 /* Frameworks */,
 				DAC15ECE292CB2F1005E31A0 /* Resources */,
+				DA41BA25292F161F0088A55F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,7 +162,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA41BA30292F4B580088A55F /* gdy-bridge.min.js in Resources */,
+				DA41BA2E292F4B3D0088A55F /* test.html in Resources */,
 				DAC15EE0292CB2F2005E31A0 /* LaunchScreen.storyboard in Resources */,
+				DA41BA34292F564D0088A55F /* README.md in Resources */,
 				DAC15EDD292CB2F2005E31A0 /* Assets.xcassets in Resources */,
 				DAC15EDB292CB2F1005E31A0 /* Main.storyboard in Resources */,
 			);
@@ -300,7 +340,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.guangdianyun.GdyJsBridge2-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guangdianyun.gdyjsbridge2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -328,7 +368,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.guangdianyun.GdyJsBridge2-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guangdianyun.gdyjsbridge2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
