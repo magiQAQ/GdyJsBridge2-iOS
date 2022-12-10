@@ -1,0 +1,54 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GdyJsBridge2
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+@_exported import GdyJsBridge2
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+public typealias CallJsReturnValue = (_ success: Swift.Bool, _ value: Any?) -> Swift.Void
+public typealias RegistReturnValue = (_ args: Swift.Array<Any>) -> Any?
+@objc @_Concurrency.MainActor(unsafe) open class GDYWKWebView : WebKit.WKWebView {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func load(_ request: Foundation.URLRequest) -> WebKit.WKNavigation?
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func loadHTMLString(_ string: Swift.String, baseURL: Foundation.URL?) -> WebKit.WKNavigation?
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func load(_ data: Foundation.Data, mimeType MIMEType: Swift.String, characterEncodingName: Swift.String, baseURL: Foundation.URL) -> WebKit.WKNavigation?
+  @available(iOS 15.0, *)
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func loadFileRequest(_ request: Foundation.URLRequest, allowingReadAccessTo readAccessURL: Foundation.URL) -> WebKit.WKNavigation
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func loadFileURL(_ URL: Foundation.URL, allowingReadAccessTo readAccessURL: Foundation.URL) -> WebKit.WKNavigation?
+  @available(iOS 15.0, *)
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func loadSimulatedRequest(_ request: Foundation.URLRequest, responseHTML string: Swift.String) -> WebKit.WKNavigation
+  @discardableResult
+  @available(iOS, introduced: 15.0, deprecated: 15.0)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func loadSimulatedRequest(_ request: Foundation.URLRequest, withResponseHTML string: Swift.String) -> WebKit.WKNavigation
+  @available(iOS 15.0, *)
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func loadSimulatedRequest(_ request: Foundation.URLRequest, response: Foundation.URLResponse, responseData data: Foundation.Data) -> WebKit.WKNavigation
+  @discardableResult
+  @available(iOS, introduced: 15.0, deprecated: 15.0)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func loadSimulatedRequest(_ request: Foundation.URLRequest, with response: Foundation.URLResponse, responseData data: Foundation.Data) -> WebKit.WKNavigation
+  @objc @_Concurrency.MainActor(unsafe) public func callJsFunction(method methodName: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public func callJsFunction(method methodName: Swift.String, returnValueHandler handler: @escaping GdyJsBridge2.CallJsReturnValue)
+  @objc @_Concurrency.MainActor(unsafe) public func callJsFunction(method methodName: Swift.String, args argsInfo: [Any])
+  @objc @_Concurrency.MainActor(unsafe) public func callJsFunction(method methodName: Swift.String, args argsInfo: [Any], returnValueHandler handler: @escaping GdyJsBridge2.CallJsReturnValue)
+  @objc @_Concurrency.MainActor(unsafe) public func registApi(method methodName: Swift.String, with handler: @escaping GdyJsBridge2.RegistReturnValue)
+  @objc @_Concurrency.MainActor(unsafe) public func unRegister(method methodName: Swift.String)
+  @objc deinit
+}
+extension GdyJsBridge2.GDYWKWebView : WebKit.WKScriptMessageHandler {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GDYSMHandler : ObjectiveC.NSObject, WebKit.WKScriptMessageHandler {
+  @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+  @objc deinit
+}

@@ -6,8 +6,7 @@
 //
 
 import UIKit
-import GdyJSBridge
-
+import GdyJsBridge2
 class ViewController: UIViewController {
 
     var lblJsMessage: UILabel!
@@ -18,10 +17,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
         setup()
         registApiForJs()
-        let url = Bundle.main.url(forResource: "test", withExtension: "html")
-        self.wkwebView.load(URLRequest(url: url!))
+        
+//        let urlRequest = URLRequest(url: Bundle.main.url(forResource: "test", withExtension: "html")!)
+        let urlRequest = URLRequest(url: URL(string: "https://web.guangdianyun.tv/live/1000376?uin=1000")!)
+        self.wkwebView.load(urlRequest)
+        // 在wkwebView之后就可以直接调用callJsFunction了， 可以不用监听navigationDelegate的
+        wkwebView.callJsFunction(method: "onLimitedMode") { [weak self] success, data in
+            if success {
+                self?.showMessage(message: "onLimitedMode called")
+            } else {
+                self?.showMessage(message: "onLimitedMode called failed, \(data as? String ?? "nil")")
+            }
+            
+        }
     }
 
     func setup() {
@@ -33,7 +44,7 @@ class ViewController: UIViewController {
         self.view.addSubview(self.wkwebView)
         // message label
         self.lblJsMessage = UILabel()
-        lblJsMessage.frame = CGRect.init(x: 0, y: 64, width: screenSize.width, height: 100)
+        lblJsMessage.frame = CGRect.init(x: 0, y: screenSize.height - 270, width: screenSize.width, height: 100)
         lblJsMessage.textAlignment = .center
         lblJsMessage.numberOfLines = 0
         lblJsMessage.backgroundColor = .orange
@@ -63,15 +74,14 @@ class ViewController: UIViewController {
     }
     
     @objc func onCallJsMethod1() {
-//        let js = [1,"a",false] as [Any]
-//        wkwebView.callJsFunction(method: "getStringFromJs", args:js) { [weak self] (success, value) in
-//            if success {
-//                self?.showMessage(message: "message From js: \(value as? String ?? "无返回值")")
-//            } else {
-//                self?.showMessage(message: "方法调用失败, 原因：\(value as! String)")
-//            }
-//        }
-        
+        let js = [1,"a",false] as [Any]
+        wkwebView.callJsFunction(method: "getStringFromJs", args:js) { [weak self] (success, value) in
+            if success {
+                self?.showMessage(message: "message From js: \(value as? String ?? "无返回值")")
+            } else {
+                self?.showMessage(message: "方法调用失败, 原因：\(value as! String)")
+            }
+        }
     }
     
     @objc func onCallJsMethod2() {
@@ -85,7 +95,9 @@ class ViewController: UIViewController {
     }
 
     func registApiForJs() {
-        
+        self.wkwebView.registApi(method: "loginRequest") { [weak self] args in
+            self?.showMessage(message: "called loginRequest")
+        }
         // 简单测试方法
         self.wkwebView.registApi(method: "getStringFromNative") { args in
             print("-----> recived js message: \(args.description)\n\n")

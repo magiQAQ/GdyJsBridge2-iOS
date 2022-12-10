@@ -1,0 +1,1211 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GdyJsBridge2",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "GdyJsBridge2"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GDYWKWebView",
+        "printedName": "GDYWKWebView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GDYWKWebView",
+                "printedName": "GdyJsBridge2.GDYWKWebView",
+                "usr": "c:@M@GdyJsBridge2@objc(cs)GDYWKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GdyJsBridge2@objc(cs)GDYWKWebView(im)initWithFrame:",
+            "mangledName": "$s12GdyJsBridge212GDYWKWebViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "GdyJsBridge2",
+            "overriding": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GdyJsBridge2.GDYWKWebView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GDYWKWebView",
+                    "printedName": "GdyJsBridge2.GDYWKWebView",
+                    "usr": "c:@M@GdyJsBridge2@objc(cs)GDYWKWebView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GdyJsBridge2@objc(cs)GDYWKWebView(im)initWithCoder:",
+            "mangledName": "$s12GdyJsBridge212GDYWKWebViewC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "GdyJsBridge2",
+            "overriding": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "load",
+            "printedName": "load(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WebKit.WKNavigation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigation",
+                    "printedName": "WebKit.WKNavigation",
+                    "usr": "c:objc(cs)WKNavigation"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GdyJsBridge2@objc(cs)GDYWKWebView(im)loadRequest:",
+            "mangledName": "$s12GdyJsBridge212GDYWKWebViewC4loadySo12WKNavigationCSg10Foundation10URLRequestVF",
+            "moduleName": "GdyJsBridge2",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "loadRequest:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadHTMLString",
+            "printedName": "loadHTMLString(_:baseURL:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WebKit.WKNavigation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigation",
+                    "printedName": "WebKit.WKNavigation",
+                    "usr": "c:objc(cs)WKNavigation"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GdyJsBridge2@objc(cs)GDYWKWebView(im)loadHTMLString:baseURL:",
+            "mangledName": "$s12GdyJsBridge212GDYWKWebViewC14loadHTMLString_7baseURLSo12WKNavigationCSgSS_10Foundation0I0VSgtF",
+            "moduleName": "GdyJsBridge2",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "loadHTMLString:baseURL:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "load",
+            "printedName": "load(_:mimeType:characterEncodingName:baseURL:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WebKit.WKNavigation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigation",
+                    "printedName": "WebKit.WKNavigation",
+                    "usr": "c:objc(cs)WKNavigation"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GdyJsBridge2@objc(cs)GDYWKWebView(im)loadData:MIMEType:characterEncodingName:baseURL:",
+            "mangledName": "$s12GdyJsBridge212GDYWKWebViewC4load_8mimeType21characterEncodingName7baseURLSo12WKNavigationCSg10Foundation4DataV_S2SAK0M0VtF",
+            "moduleName": "GdyJsBridge2",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "loadData:MIMEType:characterEncodingName:baseURL:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadFileRequest",
+            "printedName": "loadFileRequest(_:allowingReadAccessTo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigation",
+                "printedName": "WebKit.WKNavigation",
+                "usr": "c:objc(cs)WKNavigation"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GdyJsBridge2@objc(cs)GDYWKWebView(im)loadFileRequest:allowingReadAccessToURL:",
+            "mangledName": "$s12GdyJsBridge212GDYWKWebViewC15loadFileRequest_20allowingReadAccessToSo12WKNavigationC10Foundation10URLRequestV_AH3URLVtF",
+            "moduleName": "GdyJsBridge2",
+            "overriding": true,
+            "isOpen": true,
+            "intro_iOS": "15.0",
+            "objc_name": "loadFileRequest:allowingReadAccessToURL:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "Available",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadFileURL",
+            "printedName": "loadFileURL(_:allowingReadAccessTo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WebKit.WKNavigation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigation",
+                    "printedName": "WebKit.WKNavigation",
+                    "usr": "c:objc(cs)WKNavigation"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GdyJsBridge2@objc(cs)GDYWKWebView(im)loadFileURL:allowingReadAccessToURL:",
+            "mangledName": "$s12GdyJsBridge212GDYWKWebViewC11loadFileURL_20allowingReadAccessToSo12WKNavigationCSg10Foundation0H0V_AKtF",
+            "moduleName": "GdyJsBridge2",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "loadFileURL:allowingReadAccessToURL:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadSimulatedRequest",
+            "printedName": "loadSimulatedRequest(_:responseHTML:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigation",
+                "printedName": "WebKit.WKNavigation",
+                "usr": "c:objc(cs)WKNavigation"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GdyJsBridge2@objc(cs)GDYWKWebView(im)loadSimulatedRequest:responseHTMLString:",
+            "mangledName": "$s12GdyJsBridge212GDYWKWebViewC20loadSimulatedRequest_12responseHTMLSo12WKNavigationC10Foundation10URLRequestV_SStF",
+            "moduleName": "GdyJsBridge2",
+            "overriding": true,
+            "isOpen": true,
+            "intro_iOS": "15.0",
+            "objc_name": "loadSimulatedRequest:responseHTMLString:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "Available",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadSimulatedRequest",
+            "printedName": "loadSimulatedRequest(_:withResponseHTML:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigation",
+                "printedName": "WebKit.WKNavigation",
+                "usr": "c:objc(cs)WKNavigation"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GdyJsBridge2@objc(cs)GDYWKWebView(im)loadSimulatedRequest:withResponseHTMLString:",
+            "mangledName": "$s12GdyJsBridge212GDYWKWebViewC20loadSimulatedRequest_16withResponseHTMLSo12WKNavigationC10Foundation10URLRequestV_SStF",
+            "moduleName": "GdyJsBridge2",
+            "overriding": true,
+            "isOpen": true,
+            "intro_iOS": "15.0",
+            "objc_name": "loadSimulatedRequest:withResponseHTMLString:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "Available",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadSimulatedRequest",
+            "printedName": "loadSimulatedRequest(_:response:responseData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigation",
+                "printedName": "WebKit.WKNavigation",
+                "usr": "c:objc(cs)WKNavigation"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLResponse",
+                "printedName": "Foundation.URLResponse",
+                "usr": "c:objc(cs)NSURLResponse"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GdyJsBridge2@objc(cs)GDYWKWebView(im)loadSimulatedRequest:response:responseData:",
+            "mangledName": "$s12GdyJsBridge212GDYWKWebViewC20loadSimulatedRequest_8response0I4DataSo12WKNavigationC10Foundation10URLRequestV_So13NSURLResponseCAI0J0VtF",
+            "moduleName": "GdyJsBridge2",
+            "overriding": true,
+            "isOpen": true,
+            "intro_iOS": "15.0",
+            "objc_name": "loadSimulatedRequest:response:responseData:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "Available",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadSimulatedRequest",
+            "printedName": "loadSimulatedRequest(_:with:responseData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigation",
+                "printedName": "WebKit.WKNavigation",
+                "usr": "c:objc(cs)WKNavigation"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLResponse",
+                "printedName": "Foundation.URLResponse",
+                "usr": "c:objc(cs)NSURLResponse"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GdyJsBridge2@objc(cs)GDYWKWebView(im)loadSimulatedRequest:withResponse:responseData:",
+            "mangledName": "$s12GdyJsBridge212GDYWKWebViewC20loadSimulatedRequest_4with12responseDataSo12WKNavigationC10Foundation10URLRequestV_So13NSURLResponseCAI0K0VtF",
+            "moduleName": "GdyJsBridge2",
+            "overriding": true,
+            "isOpen": true,
+            "intro_iOS": "15.0",
+            "objc_name": "loadSimulatedRequest:withResponse:responseData:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "Available",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "callJsFunction",
+            "printedName": "callJsFunction(method:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GdyJsBridge2@objc(cs)GDYWKWebView(im)callJsFunctionWithMethod:",
+            "mangledName": "$s12GdyJsBridge212GDYWKWebViewC04callB8Function6methodySS_tF",
+            "moduleName": "GdyJsBridge2",
+            "objc_name": "callJsFunctionWithMethod:",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "callJsFunction",
+            "printedName": "callJsFunction(method:returnValueHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Any?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Any?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GdyJsBridge2@objc(cs)GDYWKWebView(im)callJsFunctionWithMethod:returnValueHandler:",
+            "mangledName": "$s12GdyJsBridge212GDYWKWebViewC04callB8Function6method18returnValueHandlerySS_ySb_ypSgtctF",
+            "moduleName": "GdyJsBridge2",
+            "objc_name": "callJsFunctionWithMethod:returnValueHandler:",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "callJsFunction",
+            "printedName": "callJsFunction(method:args:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GdyJsBridge2@objc(cs)GDYWKWebView(im)callJsFunctionWithMethod:args:",
+            "mangledName": "$s12GdyJsBridge212GDYWKWebViewC04callB8Function6method4argsySS_SayypGtF",
+            "moduleName": "GdyJsBridge2",
+            "objc_name": "callJsFunctionWithMethod:args:",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "callJsFunction",
+            "printedName": "callJsFunction(method:args:returnValueHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Any?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Any?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GdyJsBridge2@objc(cs)GDYWKWebView(im)callJsFunctionWithMethod:args:returnValueHandler:",
+            "mangledName": "$s12GdyJsBridge212GDYWKWebViewC04callB8Function6method4args18returnValueHandlerySS_SayypGySb_ypSgtctF",
+            "moduleName": "GdyJsBridge2",
+            "objc_name": "callJsFunctionWithMethod:args:returnValueHandler:",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "registApi",
+            "printedName": "registApi(method:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Any]) -> Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GdyJsBridge2@objc(cs)GDYWKWebView(im)registApiWithMethod:with:",
+            "mangledName": "$s12GdyJsBridge212GDYWKWebViewC9registApi6method4withySS_ypSgSayypGctF",
+            "moduleName": "GdyJsBridge2",
+            "objc_name": "registApiWithMethod:with:",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unRegister",
+            "printedName": "unRegister(method:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GdyJsBridge2@objc(cs)GDYWKWebView(im)unRegisterWithMethod:",
+            "mangledName": "$s12GdyJsBridge212GDYWKWebViewC10unRegister6methodySS_tF",
+            "moduleName": "GdyJsBridge2",
+            "objc_name": "unRegisterWithMethod:",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:configuration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GDYWKWebView",
+                "printedName": "GdyJsBridge2.GDYWKWebView",
+                "usr": "c:@M@GdyJsBridge2@objc(cs)GDYWKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebViewConfiguration",
+                "printedName": "WebKit.WKWebViewConfiguration",
+                "usr": "c:objc(cs)WKWebViewConfiguration"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GdyJsBridge2@objc(cs)GDYWKWebView(im)initWithFrame:configuration:",
+            "mangledName": "$s12GdyJsBridge212GDYWKWebViewC5frame13configurationACSo6CGRectV_So05WKWebE13ConfigurationCtcfc",
+            "moduleName": "GdyJsBridge2",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithFrame:configuration:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "userContentController",
+            "printedName": "userContentController(_:didReceive:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKUserContentController",
+                "printedName": "WebKit.WKUserContentController",
+                "usr": "c:objc(cs)WKUserContentController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKScriptMessage",
+                "printedName": "WebKit.WKScriptMessage",
+                "usr": "c:objc(cs)WKScriptMessage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GdyJsBridge2@objc(cs)GDYWKWebView(im)userContentController:didReceiveScriptMessage:",
+            "mangledName": "$s12GdyJsBridge212GDYWKWebViewC21userContentController_10didReceiveySo06WKUsergH0C_So15WKScriptMessageCtF",
+            "moduleName": "GdyJsBridge2",
+            "objc_name": "userContentController:didReceiveScriptMessage:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GdyJsBridge2@objc(cs)GDYWKWebView",
+        "mangledName": "$s12GdyJsBridge212GDYWKWebViewC",
+        "moduleName": "GdyJsBridge2",
+        "isOpen": true,
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)WKWebView",
+        "superclassNames": [
+          "WebKit.WKWebView",
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GdyJsBridge2",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "GdyJsBridge2"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GDYSMHandler",
+        "printedName": "GDYSMHandler",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "userContentController",
+            "printedName": "userContentController(_:didReceive:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKUserContentController",
+                "printedName": "WebKit.WKUserContentController",
+                "usr": "c:objc(cs)WKUserContentController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKScriptMessage",
+                "printedName": "WebKit.WKScriptMessage",
+                "usr": "c:objc(cs)WKScriptMessage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GdyJsBridge2@objc(cs)GDYSMHandler(im)userContentController:didReceiveScriptMessage:",
+            "mangledName": "$s12GdyJsBridge212GDYSMHandlerC21userContentController_10didReceiveySo06WKUserfG0C_So15WKScriptMessageCtF",
+            "moduleName": "GdyJsBridge2",
+            "objc_name": "userContentController:didReceiveScriptMessage:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GDYSMHandler",
+                "printedName": "GdyJsBridge2.GDYSMHandler",
+                "usr": "c:@M@GdyJsBridge2@objc(cs)GDYSMHandler"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GdyJsBridge2@objc(cs)GDYSMHandler(im)init",
+            "mangledName": "$s12GdyJsBridge212GDYSMHandlerCACycfc",
+            "moduleName": "GdyJsBridge2",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GdyJsBridge2@objc(cs)GDYSMHandler",
+        "mangledName": "$s12GdyJsBridge212GDYSMHandlerC",
+        "moduleName": "GdyJsBridge2",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/huqinchao\/Desktop\/App开发代码\/GdyJsBridge2\/GdyJsBridge2\/GDYWKWebView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 367,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/huqinchao\/Desktop\/App开发代码\/GdyJsBridge2\/GdyJsBridge2\/GDYWKWebView.swift",
+      "kind": "Dictionary",
+      "offset": 541,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/huqinchao\/Desktop\/App开发代码\/GdyJsBridge2\/GdyJsBridge2\/GDYWKWebView.swift",
+      "kind": "Dictionary",
+      "offset": 721,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/huqinchao\/Desktop\/App开发代码\/GdyJsBridge2\/GdyJsBridge2\/GDYWKWebView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 798,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/huqinchao\/Desktop\/App开发代码\/GdyJsBridge2\/GdyJsBridge2\/GDYWKWebView.swift",
+      "kind": "Dictionary",
+      "offset": 875,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/huqinchao\/Desktop\/App开发代码\/GdyJsBridge2\/GdyJsBridge2\/GDYWKWebView.swift",
+      "kind": "StringLiteral",
+      "offset": 275,
+      "length": 12,
+      "value": "\"GdyJsBridge2.GDYWKWebView\""
+    },
+    {
+      "filePath": "\/Users\/huqinchao\/Desktop\/App开发代码\/GdyJsBridge2\/GdyJsBridge2\/GDYSMHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 174,
+      "length": 12,
+      "value": "\"GdyJsBridge2.GDYSMHandler\""
+    }
+  ]
+}

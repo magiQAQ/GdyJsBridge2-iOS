@@ -19,7 +19,7 @@ iOS端初始化
 
 In OC
 ```objective-c
-#import <GdyJsBridge2/GdyJsBridge2.h>
+#import <GdyJSBridge/GdyJSBridge2.h>
 ...
         _webView = [[GDYWKWebView alloc]initWithFrame:self.view.bounds];
         [self.view addSubview:_webView];
@@ -27,7 +27,7 @@ In OC
 
 In Swift
 ```swift
-import GdyJsBridge2
+import GdyJSBridge2
 ...
         self.wkwebView = GDYWKWebView(frame: self.view.bounds)
         self.view.addSubview(self.wkwebView)
